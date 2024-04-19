@@ -23,18 +23,20 @@
     font-size: 18px;
     text-align: center;
     color: var(--dark);
+    margin-bottom: 4px;
 }
 .card__info {
     display: flex;
     justify-content: center;
+    gap: 4px;
     font-size: 14px;
     color: var(--beige);
-    margin-bottom: 4px;
+    margin-bottom: 16px;
 }
 .card__price {
     font-weight: 600;
     color: var(--dark);
-    margin-bottom: 16px;
+
 }
 
 .card__button {
