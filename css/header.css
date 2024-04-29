@@ -25,7 +25,7 @@
 }
 
 
-@media(width >=540px) {
+@media(width >=620px) {
     .header {
         top: 40px;
     }
@@ -33,12 +33,5 @@
        .header__logo {
         width: 164px;
         height: 23px;
-    }
-    .header__cart {
-        color: var(--dark);
-    }
-    
-    .header__cart:hover {
-        color: var(--orange);
     }
 }

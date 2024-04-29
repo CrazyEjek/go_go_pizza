@@ -110,6 +110,30 @@
      }
 }
 
-@media(width >= 1040px) {
+@media(width >= 11vm40px) {
+    .hero {
+        padding: 140px 0 100px;
+        margin-bottom: 87px;
+     }
+       
+   
+     .hero__content {
+         max-width: 620px;
+        
+     }
+     .hero__title {
+         font-size: 80px;
+     }
+     .hero__tagline {
+         margin-bottom: 64px;   
+     }
+    
+ 
+     .hero__conatiner:after {
+         bottom: -87px;
+         right: calc(var(--offset-container) + 30px);
+         max-width: 670px;
+         max-height: 591px;
+     }
 
 }
