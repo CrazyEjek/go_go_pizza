@@ -113,7 +113,7 @@ html {
     display: none;
   }
 
-  @media(width >=620px) {
+@media(width >=620px) {
     .container {
       --offset-container: 40px;
   }
