@@ -1,6 +1,8 @@
 .card {
     position: relative;
     padding-top: 35px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* размещение картинки пиццы согласно проекту, 
@@ -17,6 +19,7 @@
     background: var(--white);
     padding: 48px 8px 8px;
     border-radius: 16px;
+    flex-grow: 1;
 }
 .card__title {
     font-weight: 600;

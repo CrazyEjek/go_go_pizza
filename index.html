@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GO GO PIZZA - Заказать лучшую пиццу в городе!</title>
+    <script src="js/script.js" type="module"></script>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -178,7 +179,7 @@
 
                 <ul class="pizza__list">
                     <li class="pizza__item">
-                        <article class="card">
+                        <article class="pizza__card card">
                             <img src="/img/pizza-margherita.png" alt="Маргарита" class="card__image">
                             <div class="card__content">
                                 <h3 class="card__title">Маргарита</h3>
@@ -354,7 +355,8 @@
         <div class="container">
             <img class="footer__logo" src="/img/logo-orange.svg" alt="Лого компании go go pizza">
 
-            <p class="footer__copyright">© go go pizza, 2024</p>
+            <div class="footer__container">
+                <p class="footer__copyright">© go go pizza, 2024</p>
 
             <ul class="footer__developers">
                 <li class="footer__developer">
@@ -364,31 +366,9 @@
                     Developer: <a class="footer__developer-link" href="https://vk.com/myejek">Egor Bondarenko</a>
                 </li>
             </ul>
+            </div>
         </div>
     </footer>
-
-    <script>
-        const toppingsButton = document.querySelector('.toppings__button'); 
-        const toppingsList = document.querySelector('.toppings__list');
-
-        toppingsButton.addEventListener('click' , () => {
-            if(!toppingsList.classList.contains('toppings__list_show')) 
-            {
-                toppingsButton.classList.add('toppings__button_active');
-                toppingsList.classList.add('toppings__list_show');
-
-                toppingsList.style.maxHeight = toppingsList.scrollHeight + "px";
-            } else {
-                toppingsButton.classList.remove('toppings__button_active');
-                toppingsList.style.maxHeight = null;
-               
-
-                setTimeout(() => { 
-                    toppingsList.classList.remove('toppings__list_show');
-                }, 300)
-            }
-        })
-    </script>
 
 </body>
 </html>
