@@ -28,9 +28,8 @@ const createCard = (data) => {
 export const renderPizza = async(toppings) => {
     const pizzas = await getData(
         `https://beautiful-wry-addition.glitch.me/api/products${
-            toppings ? `?toppings=${toppings}` : ''
-        }`,
-        );
+            toppings ? `?toppings=${toppings}` :'' }`,
+);
     
         const pizzaList = document.querySelector('.pizza__list');
         pizzaList.textContent = '';
@@ -42,7 +41,7 @@ export const renderPizza = async(toppings) => {
         item.append(card);
         return item;
     });
-    pizzaList.append(... items);
+    pizzaList.append(...items);
 };
 
 

@@ -3,25 +3,25 @@
     display: flex;
     justify-content: center;
     line-height: 140%;
-    color: var(--beige);
+    color: var(--beige);}
 
 .footer__logo {
         padding-top: 106px;
         display: flex;
         justify-content: center;
-       margin-bottom: 64px;
+        margin-bottom: 64px;
     }
 
     .footer__container {
-
         padding-left: 89px;
+    }
         
     .footer__copyright {
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 20px;
-       
         
+       
     }
 
     .footer__developers {
@@ -34,6 +34,4 @@
 
     .footer__developer-link {
        
-}
-    }
 }
