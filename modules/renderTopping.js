@@ -28,11 +28,10 @@ export const renderToppings = async () => {
         itemReset.classList.add('toppings__item');
     const btnReset = document.createElement('button');
         btnReset.classList.add('toppings__reset');
-        btnReset.textContent = 'Сбросить'
+        btnReset.textContent = 'cбросить'
         btnReset.type = "reset";
         itemReset.append(btnReset);
        
-        
         const toppingsForm = document.querySelector('.toppings__form');
 
         toppingsForm.addEventListener('change', (event) => {
@@ -43,5 +42,14 @@ export const renderToppings = async () => {
                 checkedToppings.push(value)
            }
                 renderPizza(checkedToppings)
+                if (checkedToppings.length) {
+                    toppingsList.append(itemReset)
+                }
             });
+
+            btnReset.addEventListener('click' , () => {
+                itemReset.remove();
+                toppingsForm.reset();
+            });
+
         };

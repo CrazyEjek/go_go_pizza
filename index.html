@@ -48,7 +48,7 @@
                 </button>
                 
                 <form class="toppings__form">
-                    <ul class="toppings__list ">
+                    <ul class="toppings__list">
                         <li class="toppings__item">
                                 <input
                                 value="Твердый сыр" 
@@ -202,6 +202,52 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal modal-pizza">
+        <div class="modal__main modal-pizza__main">
+            <img class="modal-pizza__img" src="./img/pizza-napoletana.png" alt="пицца неополитана">
+            <h2 class="modal-pizza__tettle">Неополитана</h2>
+            <p class="modal-pizza__toppings">Грибы, сыр, томатный соус, лук, болгарский перец</p>
+            <p class="modal-pizza__info">
+                <span class="modal-pizza__price">490 ₽</span>
+                <span>/</span>
+                <span class="modal-pizza__">25 см</span>
+            </p>
+
+            <form class="modal-pizza__form">
+                <fieldset class="modal-pizza__fieldset">
+                    <input value="thin" class="modal-pizza__checkbox" id="11" type="radio" name="crust" checked>
+                    <label class="modal-pizza__label" for="thin">Тонкое тесто</label>
+                    
+                    <input  class="modal-pizza__checkbox" value="thick" id="thick" type="radio" name="crust">
+                    <label class="modal-pizza__label" for="thick">Пышное тесто</label>
+                    
+                </fieldset>
+
+                <fieldset class="modal-pizza__fieldset">
+                    <input value="25cm" class="modal-pizza__checkbox" id="11" type="radio" name="size" checked>
+                    <label class="modal-pizza__label" for="25cm">25 см</label>
+
+                    <input value="30cm" class="modal-pizza__checkbox" id="11" type="radio" name="size">
+                    <label class="modal-pizza__label" for="30cm">30 см</label>
+
+                    <input value="35cm" class="modal-pizza__checkbox" id="11" type="radio" name="size">
+                    <label class="modal-pizza__label" for="35cm">35 см</label>
+                </fieldset>
+
+                <button class="modal-pizza__add-cart">В корзину</button>
+            </form>
+
+            <button class="modal__close">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="14.8333" y="4" width="0.851136" height="15.3204" transform="rotate(45 14.8333 4)" fill="#C1AB91"/>
+                <rect x="4" y="4.60184" width="0.851136" height="15.3204" transform="rotate(-45 4 4.60184)" fill="#C1AB91"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
 
 </body>
 </html>

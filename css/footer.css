@@ -20,8 +20,6 @@
         font-family: var(--font-family);
         font-weight: 400;
         font-size: 20px;
-        
-       
     }
 
     .footer__developers {
@@ -33,5 +31,5 @@
     }
 
     .footer__developer-link {
-       
+       padding-bottom: 40px;
 }

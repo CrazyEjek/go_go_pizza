@@ -1,5 +1,4 @@
 @import url(/css/normalize.css);
-/* @import url(/css/fonts.css); */
 @import url(/css/style.css);
 @import url(/css/header.css);
 @import url(/css/hero.css);
@@ -8,4 +7,5 @@
 @import url(/css/card.css);
 @import url(/css/footer.css);
 @import url(/css/loader.css);
+@import url(/css/modal.css);
 
