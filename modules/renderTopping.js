@@ -44,12 +44,15 @@ export const renderToppings = async () => {
                 renderPizza(checkedToppings)
                 if (checkedToppings.length) {
                     toppingsList.append(itemReset)
+                } else {
+                    itemReset.remove();
                 }
             });
 
             btnReset.addEventListener('click' , () => {
                 itemReset.remove();
                 toppingsForm.reset();
+                renderPizza();
             });
 
         };
