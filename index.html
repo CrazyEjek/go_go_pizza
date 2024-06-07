@@ -96,34 +96,36 @@
     <div class="modal modal-pizza">
         <div class="modal__main modal-pizza__main">
             <img class="modal-pizza__img" src="./img/pizza-napoletana.png" alt="пицца неополитана">
-            <h2 class="modal-pizza__tettle">Неополитана</h2>
+            <h2 class="modal-pizza__tittle">Неополитана</h2>
             <p class="modal-pizza__toppings">Грибы, сыр, томатный соус, лук, болгарский перец</p>
             <p class="modal-pizza__info">
                 <span class="modal-pizza__price">490 ₽</span>
-                <span>/</span>
-                <span class="modal-pizza__">25 см</span>
+                <span> /</span>
+                <span class="modal-pizza__size"> 25 см</span>
             </p>
 
             <form class="modal-pizza__form">
-                <fieldset class="modal-pizza__fieldset">
-                    <input value="thin" class="modal-pizza__checkbox" id="11" type="radio" name="crust" checked>
-                    <label class="modal-pizza__label" for="thin">Тонкое тесто</label>
-                    
-                    <input  class="modal-pizza__checkbox" value="thick" id="thick" type="radio" name="crust">
-                    <label class="modal-pizza__label" for="thick">Пышное тесто</label>
-                    
-                </fieldset>
-
-                <fieldset class="modal-pizza__fieldset">
-                    <input value="25cm" class="modal-pizza__checkbox" id="11" type="radio" name="size" checked>
-                    <label class="modal-pizza__label" for="25cm">25 см</label>
-
-                    <input value="30cm" class="modal-pizza__checkbox" id="11" type="radio" name="size">
-                    <label class="modal-pizza__label" for="30cm">30 см</label>
-
-                    <input value="35cm" class="modal-pizza__checkbox" id="11" type="radio" name="size">
-                    <label class="modal-pizza__label" for="35cm">35 см</label>
-                </fieldset>
+                <div class="modal-pizza__group-fieldset">
+                    <fieldset class="modal-pizza__fieldset">
+                        <input value="thin" class="modal-pizza__radio" id="thin" type="radio" name="crust" checked>
+                        <label class="modal-pizza__label" for="thin">Тонкое тесто</label>
+                        
+                        <input  class="modal-pizza__radio" value="thick" id="thick" type="radio" name="crust">
+                        <label class="modal-pizza__label" for="thick">Пышное тесто</label>
+                        
+                    </fieldset>
+    
+                    <fieldset class="modal-pizza__fieldset">
+                        <input value="25cm" class="modal-pizza__radio" id="25cm" type="radio" name="size" checked>
+                        <label class="modal-pizza__label" for="25cm">25 см</label>
+    
+                        <input value="30cm" class="modal-pizza__radio" id="30cm" type="radio" name="size">
+                        <label class="modal-pizza__label" for="30cm">30 см</label>
+    
+                        <input value="35cm" class="modal-pizza__radio" id="35cm" type="radio" name="size">
+                        <label class="modal-pizza__label" for="35cm">35 см</label>
+                    </fieldset>
+                </div>
 
                 <button class="modal-pizza__add-cart">В корзину</button>
             </form>

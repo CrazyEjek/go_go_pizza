@@ -13,16 +13,12 @@
 .modal__main {
     position: relative;
     cursor: default;
-    padding: 16px;
     background: var(--white);
     border-radius: 32px;
     margin:auto;
    
 } 
 
-.modal-pizza__main {
-    max-width: 368px;
-}
 .modal__close {
     position: absolute;
     top: 16px;

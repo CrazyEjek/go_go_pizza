@@ -9,6 +9,7 @@ const init = () => {
     toppingsToogle();
     renderToppings();
     renderPizza();
+    
 };
 
 init();

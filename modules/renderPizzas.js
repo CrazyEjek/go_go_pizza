@@ -1,4 +1,5 @@
 import { getData } from "./getData.js";
+import { modalController } from "./modalController.js";
 
 const btnReset = document.createElement('button');
 btnReset.classList.add('pizza__reset-toppings');
@@ -52,6 +53,16 @@ const pizzaList = document.querySelector('.pizza__list');
                 return item;
             });
             pizzaList.append(...items);
+
+            modalController({
+                modal: '.modal-pizza',
+                 btnOpen: '.card__button',
+                 btnClose: '.modal__close',
+                 cbOpen(btnOpen) {
+                    
+                 }
+
+            });
         } else {
                 pizzaTitle.textContent = 'Такой пиццы у нас нет :('
                 pizzaTitle.after(btnReset);
