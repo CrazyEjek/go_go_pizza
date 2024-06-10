@@ -1,5 +1,6 @@
 import { getData } from "./getData.js";
 import { modalController } from "./modalController.js";
+import { renderModalPizza } from "./renderModalPizza.js";
 
 const btnReset = document.createElement('button');
 btnReset.classList.add('pizza__reset-toppings');
@@ -58,10 +59,11 @@ const pizzaList = document.querySelector('.pizza__list');
                 modal: '.modal-pizza',
                  btnOpen: '.card__button',
                  btnClose: '.modal__close',
-                 cbOpen(btnOpen) {
-                    
-                 }
-
+                 async cbOpen(btnOpen) {
+                    const pizza = await getData(
+                        `https://beautiful-wry-addition.glitch.me/api/products/${btnOpen.dataset.id}`,);
+                        renderModalPizza(pizza);
+                 },
             });
         } else {
                 pizzaTitle.textContent = 'Такой пиццы у нас нет :('
