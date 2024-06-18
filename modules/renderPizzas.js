@@ -22,7 +22,7 @@ const createCard = (data) => {
                 <h3 class="card__title">${data.name['ru'][0].toUpperCase()}${data.name['ru'].slice(1).toLowerCase()}</h3>
 
                 <p class="card__info">
-                    <span class="card__price">${data.price['25cm']} руб</span>
+                    <span class="card__price">${data.price['25cm']} ₽</span>
                     <span>/</span>
                     <span class="card__size">25 см</span>
                 </p>
