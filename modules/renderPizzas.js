@@ -68,11 +68,9 @@ const pizzaList = document.querySelector('.pizza__list');
         } else {
                 pizzaTitle.textContent = 'Такой пиццы у нас нет :('
                 pizzaTitle.after(btnReset);
-                
+            
         }
 };
-
-
 
 btnReset.addEventListener('click', () => {
     renderPizza();
